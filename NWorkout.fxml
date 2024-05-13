@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proj.NWorkoutController">
+   <top>
+      <HBox prefHeight="1.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox prefHeight="483.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="side_ankerpane" minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="200.0" style="-fx-background-color: #A0A1AF;">
+               <children>
+                  <Pane fx:id="inner_pane" layoutX="-4.0" layoutY="135.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #9B7DCB; -fx-border-color: #9B7DCB; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <ImageView fitHeight="49.0" fitWidth="50.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@moon_4139153.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="nRButton" layoutX="33.0" layoutY="1.0" mnemonicParsing="false" onAction="#nRButtonOnAction" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: transparent;" text="Night" textFill="WHITESMOKE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="nRButton1" layoutX="48.0" layoutY="25.0" mnemonicParsing="false" onAction="#nRButtonOnAction" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: transparent;" text=" Routine" textFill="WHITESMOKE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane1" layoutY="248.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #AD93D8; -fx-border-color: #AD93D8; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <Button fx:id="emotionsButton" layoutX="16.0" layoutY="13.0" mnemonicParsing="false" onAction="#emotionsButtonOnAction" prefHeight="47.0" prefWidth="179.0" style="-fx-background-color: transparent;" text=" Emotions" textFill="WHITESMOKE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="49.0" fitWidth="47.0" layoutX="6.0" layoutY="11.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@emoticons.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane11" layoutX="-1.0" layoutY="355.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #BA9EE0; -fx-border-color: #BA9EE0; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <Button fx:id="nWorkoutButton" layoutX="26.0" layoutY="10.0" mnemonicParsing="false" onAction="#nWorkoutButtonOnAction" prefHeight="47.0" prefWidth="175.0" style="-fx-background-color: transparent;" text="Workout" textFill="WHITESMOKE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="24.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="11.0" layoutY="5.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@yoga-pose.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane111" layoutX="-2.0" layoutY="462.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #C4A7E6; -fx-border-color: #C4A7E6; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="15.0" layoutY="11.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@write.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="journalButton" layoutX="31.0" layoutY="-3.0" mnemonicParsing="false" onAction="#journalButtonOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: transparent;" text="Let's" textFill="WHITESMOKE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="journalButton1" layoutX="54.0" layoutY="21.0" mnemonicParsing="false" onAction="#journalButtonOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: transparent;" text="Journal" textFill="WHITESMOKE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane1111" layoutX="2.0" layoutY="30.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #8A63C0; -fx-border-color: #8A63C0; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@building_13510673.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="homeButton" layoutX="55.0" layoutY="12.0" mnemonicParsing="false" onAction="#homeButtonOnAction" style="-fx-background-color: transparent;" text="Home" textFill="WHITESMOKE">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <SplitPane prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <Pane prefHeight="451.0" prefWidth="573.0" style="-fx-background-color: #DCD0FF; -fx-border-color: #DCD0FF;">
+               <children>
+                  <Pane layoutX="-4.0" prefHeight="65.0" prefWidth="575.0">
+                     <children>
+                        <Label layoutX="80.0" layoutY="16.0" prefHeight="33.0" prefWidth="625.0" text="NIGHT SHIFT! Let's end the day in a healthy way" textFill="#1a1c2c">
+                           <font>
+                              <Font name="Century Gothic Bold" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="562.0" fitWidth="265.0" layoutX="22.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@body.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="562.0" fitWidth="234.0" layoutX="277.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@body1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="567.0" fitWidth="259.0" layoutX="518.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@body2.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox layoutX="194.0" layoutY="309.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="18.0" />
+                  <CheckBox layoutX="190.0" layoutY="581.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="18.0" />
+                  <CheckBox layoutX="455.0" layoutY="570.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="18.0" />
+                  <CheckBox layoutX="455.0" layoutY="294.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="18.0" />
+                  <CheckBox layoutX="728.0" layoutY="294.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="18.0" />
+                  <CheckBox layoutX="729.0" layoutY="578.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="18.0" />
+               </children>
+            </Pane>
+         </items></SplitPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.proj.MorningRoutineController">
+   <top>
+      <HBox prefHeight="1.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <VBox prefHeight="483.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+         <children>
+          <AnchorPane fx:id="side_ankerpane" minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="200.0" style="-fx-background-color: #e7c6ff;">
+               <children>
+                  <Pane fx:id="inner_pane" layoutX="-3.0" layoutY="136.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #ffe999; -fx-border-color: #ffe999; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@sun.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="mRButton" layoutX="22.0" mnemonicParsing="false" onAction="#mRButtonOnAction" prefHeight="47.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Morning">
+                           <font>
+                              <Font name="Century Gothic Bold" size="24.0" />
+                           </font></Button>
+                        <Button fx:id="mRButton1" layoutX="58.0" layoutY="26.0" mnemonicParsing="false" onAction="#mRButtonOnAction" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: transparent; -fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Routine">
+                           <font>
+                              <Font name="Century Gothic Bold" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane1" layoutX="1.0" layoutY="251.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #ffefb3; -fx-border-color: #ffefb3; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <Button fx:id="breakfastButton" layoutX="41.0" layoutY="9.0" mnemonicParsing="false" onAction="#breakfastButtonOnAction" prefHeight="47.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Breakfast">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font></Button>
+                        <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="6.0" layoutY="8.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@coffee.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane11" layoutY="355.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #fff5cc; -fx-border-color: #fff5cc; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <Button fx:id="workoutButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#workoutButtonOnAction" prefHeight="47.0" prefWidth="194.0" style="-fx-background-color: transparent; -fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Workout">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font></Button>
+                        <ImageView fitHeight="57.0" fitWidth="45.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@yoga-pose.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane111" layoutX="1.0" layoutY="465.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #fffbe6; -fx-border-color: #fffbe6; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="43.0" layoutX="7.0" layoutY="13.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@self-love.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="gratitudeButton" layoutX="23.0" layoutY="11.0" mnemonicParsing="false" onAction="#gratitudeButtonOnAction" prefHeight="47.0" prefWidth="175.0" style="-fx-background-color: transparent; -fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Gratitude">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font></Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="inner_pane1111" layoutX="-1.0" layoutY="27.0" prefHeight="70.0" prefWidth="177.0" style="-fx-background-color: #ffe080; -fx-border-color: #ffe080; -fx-border-width: 2 2 2 2; -fx-border-style: solid; -fx-border-radius: 20; -fx-background-radius: 50;">
+                     <children>
+                        <Button fx:id="homeButton" layoutX="44.0" layoutY="9.0" mnemonicParsing="false" onAction="#homeButtonOnAction" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Home">
+                           <font>
+                              <Font name="Century Gothic" size="24.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="47.0" fitWidth="49.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@building_13510673.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <SplitPane prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <Pane prefHeight="451.0" prefWidth="573.0" style="-fx-background-color: #EAF8F5; -fx-border-color: #EAF8F5;">
+               <children>
+                  <Pane layoutX="-4.0" prefHeight="65.0" prefWidth="575.0">
+                     <children>
+                        <Label fx:id="usernameLabel" layoutX="51.0" layoutY="12.0" prefHeight="47.0" prefWidth="432.0" style="-fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Good morning, username !" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="pane_1" layoutX="18.0" layoutY="117.0" prefHeight="476.0" prefWidth="756.0" style="-fx-background-color: white; -fx-border-color: #D8A7B1; -fx-border-width: 2 2 2 2; -fx-border-radius: 30; -fx-border-style: solid; -fx-background-radius: 30;">
+                     <children>
+                        <HBox layoutX="30.0" layoutY="14.0" prefHeight="49.0" prefWidth="247.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@wake-up.png" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox mnemonicParsing="false" prefHeight="32.0" prefWidth="189.0" text="Wake up early">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="142.0" prefHeight="49.0" prefWidth="259.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@facewash.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox graphicTextGap="7.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="210.0" text="Wash my face">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="209.0" prefHeight="49.0" prefWidth="271.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@tooth-paste.png" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox mnemonicParsing="false" text="Brush my teeth">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="280.0" prefHeight="49.0" prefWidth="236.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@glass-of-water.png" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox mnemonicParsing="false" text="Drink water">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="352.0" layoutY="77.0" prefHeight="49.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@extended.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox mnemonicParsing="false" text="Stretch">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="27.0" layoutY="347.0" prefHeight="49.0" prefWidth="253.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@bedroom.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox mnemonicParsing="false" text="Make my bed">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="350.0" layoutY="142.0" prefHeight="49.0" prefWidth="244.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@shower.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox mnemonicParsing="false" text="Take my shower">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="30.0" layoutY="77.0" prefHeight="49.0" prefWidth="270.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@gratitude.png" />
+                                 </image>
+                              </ImageView>
+                              <CheckBox mnemonicParsing="false" text="Practice Gratitude">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="350.0" layoutY="14.0" prefHeight="49.0" prefWidth="255.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@frying-pan.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox mnemonicParsing="false" text="Breakfast Time!">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="350.0" layoutY="208.0" prefHeight="49.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@clothing-hanger.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox mnemonicParsing="false" text="Get ready">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="349.0" layoutY="272.0" prefHeight="49.0" prefWidth="242.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@notebook.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox mnemonicParsing="false" text="Plan my day">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="348.0" layoutY="339.0" prefHeight="64.0" prefWidth="339.0">
+                           <children>
+                              <ImageView fitHeight="51.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@jumping-man.png" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                              <CheckBox mnemonicParsing="false" prefHeight="32.0" prefWidth="329.0" text="Make the most of my day">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></CheckBox>
+                           </children>
+                        </HBox>
+                     </children></Pane>
+                  <Label layoutX="126.0" layoutY="61.0" prefHeight="35.0" prefWidth="379.0" style="-fx-text-fill: linear-gradient(to right, #3e82b2, #3477a7, #2a6c9c, #206191, #165686);" text="Start your day with productivity :)">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </items></SplitPane>
+   </center>
+</BorderPane>
